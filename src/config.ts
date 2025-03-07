@@ -17,7 +17,7 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  site: "https://example.com/",
+  site: "https://github.com/BrianPhiri/my-blog",
   title: "Brian's self hosting chronicles",
   slogan: "",
   description: "Yea... I host my own [insert service here]",
