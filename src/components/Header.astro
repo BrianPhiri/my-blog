@@ -4,17 +4,16 @@ import { siteConfig } from '../config';
 import Search from './Search.astro';
 
 const navItems = [
-  { href: '/', text: 'Home' },
-  { href: '/blog', text: 'Blog' },
-  { href: '/tags', text: 'Tags' },
-  { href: '/archive', text: 'Archive' },
-  { href: 'https://github.com/larry-xue/astro-zen-blog', text: 'Repo' },
+  { href: '/my-blog/', text: 'Home' },
+  { href: '/my-blog/blog', text: 'Blog' },
+  { href: '/my-blog/tags', text: 'Tags' },
+  { href: '/my-blog/archive', text: 'Archive' },
 ];
 ---
 
 <header class="py-6">
   <nav class="flex justify-between items-center flex-wrap">
-    <a href="/" class="text-2xl font-bold text-gray-900 dark:text-white">{ siteConfig.title }</a>
+    <a href="/my-blog" class="text-2xl font-bold text-gray-900 dark:text-white">{ siteConfig.title }</a>
     <div class="flex items-center gap-6">
       <ul class="flex gap-6">
         {navItems.map(({ href, text }) => (
